@@ -1,11 +1,11 @@
 // 이전과 동일한 내용
 import 'dart:convert';
+import 'package:baby_recorder/services/data.dart';
 import 'package:http/http.dart' as http;
 
 class RecordService {
-  static String _appsScriptWebhookUrl =
-      'https://script.google.com/macros/s/AKfycbzU6omE4n8Jm7pbDLlPix-cuLxhzGko2B4HeolEV7b7q7ao_BpJ8moSv2Uf_rQrgaAY1w/exec';
-  static String _spreadsheetId = '';
+  static String _appsScriptWebhookUrl = webhook;
+  static String _spreadsheetId = sheetId;
 
   static void setWebhookUrl(String url) {
     _appsScriptWebhookUrl = url;
